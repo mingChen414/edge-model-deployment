@@ -1,0 +1,25 @@
+{
+  "source": "https://modelscope.cn/api/v1/models/ViduAI/Vidu-S1",
+  "fetched_at": "2026-07-13T23:48:28.0200631+08:00",
+  "id": 1523591,
+  "name": "Vidu-S1",
+  "namespace": "ViduAI",
+  "revision": "master",
+  "frameworks": [
+    "other"
+  ],
+  "libraries": [
+    "other"
+  ],
+  "task_names": [
+    "multimodal-dialogue"
+  ],
+  "storage_size": 156042159,
+  "support_inference": "",
+  "support_deployment": 0,
+  "support_api_inference": false,
+  "license": "",
+  "license_name": "",
+  "license_link": "",
+  "last_updated_time": 1783944929
+}

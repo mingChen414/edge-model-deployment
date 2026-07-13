@@ -1,0 +1,68 @@
+deployment_record_id: VIDU-S1-20260713-001
+candidate_id: VIDU-S1-MODELSCOPE-LOCAL-001
+deployment_id: null
+executed_at: "2026-07-13"
+target: local_comfyui_inference
+status: BLOCKED
+
+source:
+  repository: "https://www.modelscope.cn/ViduAI/Vidu-S1.git"
+  branch: master
+  commit: c8e5248ac8b3b1f3794d463b09f8d1b4d389f7cc
+  workspace_clean: true
+
+node_results:
+  N0:
+    status: BLOCKED
+    conclusion: >-
+      The repository is a product/documentation/API entry repository with a
+      tutorial MP4, not a local model deployment package. No weights, local
+      inference implementation, model license, or Vidu S1 ComfyUI path exists.
+    validation:
+      immutable_model_identity: FAIL
+      model_components_complete: FAIL
+      local_inference_implementation: FAIL
+      model_license_present: FAIL
+      input_output_contract_measurable: FAIL
+      comfyui_native_path: FAIL
+      comfyui_custom_node_path: FAIL
+      runtime_requirements_known: FAIL
+  N1:
+    status: NOT_STARTED
+    reason: N0_BLOCKED
+  N2:
+    status: NOT_STARTED
+    reason: N0_BLOCKED
+  N3:
+    status: NOT_STARTED
+    reason: N0_BLOCKED
+  N4:
+    status: NOT_STARTED
+    reason: N0_BLOCKED
+  N5:
+    status: NOT_STARTED
+    reason: N0_BLOCKED
+
+evidence:
+  - "https://modelscope.cn/models/ViduAI/Vidu-S1"
+  - "https://modelscope.cn/api/v1/models/ViduAI/Vidu-S1"
+  - "https://github.com/shengshu-ai/vidu-s1-api"
+  - "https://github.com/Comfy-Org/ComfyUI/blob/master/comfy_api_nodes/nodes_vidu.py"
+
+issues:
+  - id: VIDU-S1-N0-001
+    severity: BLOCKER
+    summary: No local model weights or components
+  - id: VIDU-S1-N0-002
+    severity: BLOCKER
+    summary: No local inference code or dependency contract
+  - id: VIDU-S1-N0-003
+    severity: BLOCKER
+    summary: No model/weight license
+  - id: VIDU-S1-N0-004
+    severity: BLOCKER
+    summary: No Vidu S1 ComfyUI native or official custom-node path
+
+next_action:
+  local_path: Obtain official local artifacts and restart at N0 with a new candidate_id
+  alternative_path: Create a separate remote API/RTC integration contract

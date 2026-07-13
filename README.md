@@ -29,6 +29,7 @@
 ## 当前内容
 
 - [ComfyUI 模型部署通用节点式 SOP（新手执行版）](docs/sop/comfyui/ComfyUI模型部署SOP.md)
+- [Vidu S1：ModelScope 仓库无法用于本地 ComfyUI 部署（N0 阻断案例）](docs/cases/vidu-s1/2026-07-13-modelscope-n0-blocked.md)
 
 ## 新增经验的最小要求
 
