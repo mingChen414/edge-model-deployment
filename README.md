@@ -29,6 +29,7 @@
 ## 当前内容
 
 - [ComfyUI 模型部署通用节点式 SOP（新手执行版）](docs/sop/comfyui/ComfyUI模型部署SOP.md)
+- [AMD Ryzen AI Max+ 395（128GB）本地推理模型部署测试报告](docs/cases/amd-395-128gb/2026-07-14-AMD395-128GB模型部署推理测试报告.md)
 - [Vidu S1：ModelScope 仓库无法用于本地 ComfyUI 部署（N0 阻断案例）](docs/cases/vidu-s1/2026-07-13-modelscope-n0-blocked.md)
 
 ## 新增经验的最小要求
